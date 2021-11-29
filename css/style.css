@@ -18,15 +18,15 @@ html{
 }
 
 body{
-    font-size: var(--fuenteParrafos);
+    font-family: var(--fuenteParrafos);
     font-size: 1.6rem;
     line-height: 2;
 }
 
 /** Globales**/
 .contenedor{
-    max-width: 120rem;
-    width: 90%;
+    
+    width: min(90%, 120rem);
     margin: 0 auto;
 }
 
@@ -93,6 +93,10 @@ img{
     .header__texto{
         margin-top: 15rem;
     }
+}
+
+.barra {
+    padding-top: 4rem;
 }
 
 @media (min-width: 768px) {
@@ -198,7 +202,13 @@ img{
     font-weight: normal;
 }
 
-.widget-curso__label, .widget-curso__info{
+.widget-curso__label, 
+.widget-curso__info {
     font-size: 2rem;
 }
 
+.footer {
+    background-color: var(--negro);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+}
