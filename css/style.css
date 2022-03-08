@@ -311,5 +311,9 @@ img{
     .campo__label {
         flex: none;
         text-align: start;
-    }    
+    }
+
+    .campo__field--textarea {
+        max-width: 100%;
+    }
 }
