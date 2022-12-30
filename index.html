@@ -9,6 +9,9 @@
 
     
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <!-- Prefetch -->
+    <link rel="prefetch" href="nosotros.html" as="document">
     
     <!-- Preload -->
     <link rel="preload" href="css/normalize.css" as="style">
@@ -49,7 +52,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img loading="lazy" src="/img/blog1.jpg" alt="imagen blog">
+                    <picture>
+                        <source srcset="img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="/img/blog1.jpg" alt="imagen blog">
+                    </picture>
                 </div>
 
                 <div class="entrada__contenido">
